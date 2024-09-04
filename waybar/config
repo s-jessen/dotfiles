@@ -1,0 +1,74 @@
+{
+	//General settings
+	"layer": "top",
+	"margin-top": 0,
+	
+	//Modules left
+	"modules-left": [],
+
+	//Modules center
+	"modules-center": [
+		"hyprland/workspaces"
+	],
+
+	//Modules right
+	"modules-right": [
+		"clock",
+		"network",
+		"pulseaudio/slider",
+		"cpu",
+		"memory"
+	],
+
+
+/* -----------------------------------------------------
+ * Modules 
+ * ----------------------------------------------------- */
+	
+	"network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": " ({signalStrength}%)",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "on-click": "kitty -e nmtui"
+	},
+
+	"clock": {
+        "format": "  {:%d-%m-%y -  %H:%M}    ",
+        "tooltip": false
+	},
+
+	"pulseaudio/slider": {
+	"min": 0,
+	"max": 100,
+	"orientation": "horizontal"
+	},
+	
+	"cpu": {
+	"interval": 50,
+	"format": "   {usage}%  ",
+	"max-length": 10 
+	},
+
+	"memory": {
+	"format": "   {}%  "
+	},
+
+	"hyprland/workspaces": {
+	"format": "{icon}",
+	"format-icons": {
+		"1": "",
+		"2": "",
+		"3": "",
+		"4": "",
+		"active": "",
+		"default": ""
+	},
+       "persistent-workspaces": {
+             "*": 4, // 4 workspaces by default
+		}
+	}
+
+}

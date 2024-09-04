@@ -1,0 +1,61 @@
+* {
+    font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands", FontAwesome,  sans-serif;
+    font-size: 12px;
+    background-color: #282a36;
+    color: #f8f8f2;
+}
+
+#clock {
+    font-size: 12px;
+}
+
+#pulseaudio-slider trough {
+    min-height: 10px;
+    min-width: 50px;
+    border-radius: 5px;
+    background-color: black;
+}
+
+/* -----------------------------------------------------
+ * Workspaces 
+ * ----------------------------------------------------- */
+
+#workspaces {
+    background: @workspacesbackground1;
+    margin: 2px 1px 3px 1px;
+    padding: 0px 1px;
+    border-radius: 15px;
+    border: 0px;
+    font-weight: bold;
+    font-style: normal;
+    opacity: 0.8;
+    font-size: 16px;
+    color: @textcolor1;
+}
+
+#workspaces button {
+    padding: 0px 5px;
+    margin: 4px 3px;
+    border-radius: 15px;
+    border: 0px;
+    color: @textcolor1;
+    background-color: @workspacesbackground2;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.4;
+}
+
+#workspaces button.active {
+    color: @textcolor1;
+    background: @workspacesbackground2;
+    border-radius: 15px;
+    min-width: 40px;
+    transition: all 0.3s ease-in-out;
+    opacity:1.0;
+}
+
+#workspaces button:hover {
+    color: @textcolor1;
+    background: @workspacesbackground2;
+    border-radius: 15px;
+    opacity:0.7;
+}
